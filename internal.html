@@ -1,0 +1,98 @@
+<!--  Internal CSS
+ 
+ Selectors
+ 1.id = # It is for unique code,It is used to write header/unique 
+ 2.Class = . For reusabale codes/style which is repeated for multiple task 
+ 3.Element= (h1,h2,p)It is used for the specific tasks
+ 4.Universal= * It is common throughout the code
+ 5.Pseudo seletor=->Over on a button turn 
+ 
+ Google Fonts
+  It is used to select the particular font
+  
+  Play
+  and embedded and import-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+        * {
+            font-family: "Play", sans-serif;
+            background-color: beige;
+        }
+
+        h1,
+        p {
+            color: white;
+            background-color: blueviolet;
+        }
+
+        p {
+            background-color: black;
+            font-family: cursive;
+            border-radius: 12px;
+            border: 2px solid red;
+            padding: 8px 10px 12px 14px;
+            /* border 
+             1 dotted
+             2.dashed */
+        }
+
+        .custom-button {
+            border-radius: 14px;
+            background-color: white;
+            border: none;
+            color: blueviolet;
+            padding: 8px;
+            box-shadow: 0px 0px 8px rgb(172, 114, 227);
+            /*    x-offset y-offset  blur  color */
+            cursor: pointer;
+        }
+        .custom-button:hover{
+            background-color: purple;
+            color:white;
+        }
+
+        #header{
+            color:chocolate;
+            background-color: bisque;
+            text-align: center;
+            padding:12px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header">Welcome to Internal CSS</h1>
+    <h1>Second H1 Elemet</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro facilis facere deserunt consequuntur repellat
+        molestiae expedita officia itaque! Voluptate, consequatur.</p>
+
+    <button class="custom-button">Click Me</button>
+</body>
+
+</html>
+
+<!-- padding:20px
+ padding:10px 20px
+          top nd bottom  left and right
+If it has four different values then it starts from top and then clockwise
+padding:5px 10 px 15px 20px 
+
+Responsive web application
+The application that make page responsiveness to adjust the different screen pages
+  1.Media queries:More effective
+  2.Flexbox:more effective used for mobile screen
+  3.Boot-strap
+  
+  -->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            margin:0;
+        }
+
+        .box{
+            border:1px solid #ccc;
+            background: color #f4f4f4;
+            text-align:center;
+            width:220px;
+            height:150px;
+        }
+
+        .main-container{
+            height:100vh;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+
+        .box-1{
+            /* order:2;
+               flex:1; */
+        }
+        .box-2{
+            overflow-y:auto;
+            /* order:3; */
+            /* flex:1; */
+        }
+        .box-3{
+            /* overflow-y:auto;
+            order:1;
+            flex:2; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box box-1">
+            <h3>Box1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.
+
+            </p>
+        </div>
+
+    
+            <div class="box box-2">
+                <h3>Box2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, reprehenderit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, quam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, qui!
+                </p>
+            </div>
+            
+                <div class="box box3">
+                    <h3>Box3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+    </div>
+</body>
+</html>
